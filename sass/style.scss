@@ -1,3 +1,9 @@
+
+// import partials
+
+@import "partial";
+
+
 body, html {
     width: 100%;
     height: 100%;
@@ -91,6 +97,26 @@ body, h1, h2, h3, h4, h5, h6 {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border: 2px solid #156FD8;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 1px #4399FC;
 }
+
+
+//Mixins para concentrar todos los radios para los diferentes web browser
+
+$radius: 10px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+#form { @include border-radius(10px); }
+
+
+
+
+
+
+
+
