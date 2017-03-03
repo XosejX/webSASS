@@ -1,8 +1,5 @@
-
-// import partials
-
 @import "partial";
-
+@import "sprite";
 
 body, html {
     width: 100%;
@@ -44,6 +41,20 @@ body, h1, h2, h3, h4, h5, h6 {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.ma{
+    width: 20%;
+}
+
+.rs{
+    width: 25%;
+}
+
+.ic{
+    height: 128px;
+    width: 128px;
+    display: inline-block;
 }
 
 @media (max-width: 767px) {
@@ -112,11 +123,3 @@ $radius: 10px;
 }
 
 #form { @include border-radius(10px); }
-
-
-
-
-
-
-
-

@@ -1,0 +1,5 @@
+$icons: sprite-map("icons/*.png", $spacing: 5px, $layout: horizontal);
+
+.fb-icon { background: sprite($icons, fb); }
+.tw-icon { background: sprite($icons, tw); }
+.gh-icon { background: sprite($icons, gh); }
